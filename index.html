@@ -6,15 +6,15 @@
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="KestrelBryce" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="dollar_favicon" sizes="180x180" href="./fav_index/dollar_favicon.jpg" />
     <!-- favicon -->
+    <link rel="dollar_favicon" sizes="180x180" href="./fav_index/dollar_favicon.jpg" />
     <link rel="icon" type="image/jpg" sizes="32x32" href="./fav_index/dollar_favicon.jpg" />
     <link rel="icon" type="image/jpg" sizes="16x16" href="./fav_index/dollar_favicon.jpg" />
     <link rel="manifest" href="./fav_index/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>currency and taxes, with JavaScript</title>
+    <title>Currency and Taxes, with JavaScript</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -22,53 +22,47 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">currency and taxes, with JS</span>
+          <span class="mdl-layout-title">Currency and Taxes, with JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <table>
           <tr>
             <th>
-              <h2>Formulas</h2>
-              <h3>A = bh/2</h3>
-              <h3>P = A + B + C</h3>
+              <h2>Enter your employment information below:</h2>
             </th>
           </tr>
         </table>
         <!-- Simple Textfield -->
-        <form action="#">
-          <p>Length</p>
+        
+          <p>Number of hours worked:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length-of-triangle"
+              id="number-hours-worked"
             />
-            <label class="mdl-textfield__label" for="length-of-triangle">length ...</label>
+            <label class="mdl-textfield__label" for="number-hours-worked">Numbers go here... </label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-        </form>
-				
         <!-- Numeric Textfield -->
-        <form action="#">
-          <p>Width</p>
+          <p>Hourly pay rate:</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="width-of-triangle"
+              id="hourly-pay-rate"
             />
-            <label class="mdl-textfield__label" for="width-of-triangle">width ...</label>
+            <label class="mdl-textfield__label" for="hourly-pay-rate">Numbers go here... </label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-        </form>
-				
+        
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()"
+          onclick="javascript:calculate()"
         >
           Calculate
         </button>
